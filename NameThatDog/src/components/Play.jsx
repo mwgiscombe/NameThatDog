@@ -672,7 +672,7 @@ nextLevel == true && !youWin ?
         <div className='d-flex justify-content-between flex-row'>
         <h5>Level: {level}</h5>
         <h5>Lives: {lives.join('')}</h5>
-       <h5>My Score: {score} </h5> 
+       <h5>My Score : {score} </h5> 
        <h5>High Score: {score > highScore ? newHighScore : highScore}</h5>
        </div>
       </Row>
