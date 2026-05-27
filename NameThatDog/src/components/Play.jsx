@@ -13,7 +13,7 @@ import happyDog from '../assets/happyDog.png'
 import bowl from '../assets/bowl.png'
 import YouWin from './YouWin'
 
-function Play({start, setStart, youWin, setYouWin, highScore}) {
+function Play({start, setStart, youWin, setYouWin, highScore, highStats}) {
   const [newHighScore, setNewHighScore] = useState(0)
   const [alertHighScore, setAlertHighScore] = useState(false)
     const [question, setQuestion] = useState(0)
@@ -657,7 +657,7 @@ useEffect(() =>{
       
        
     {gameOver == true || youWin == true ?
-    <GameOver score={score} reset = {reset} youWin={youWin} setYouWin={setYouWin} />
+    <GameOver score={score} reset = {reset} youWin={youWin} setYouWin={setYouWin} highStats={highStats} />
 :
 nextLevel == true && !youWin ?
 <NextLevel score ={score} goToNextLevel={goToNextLevel} level={level}  />

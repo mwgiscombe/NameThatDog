@@ -38,7 +38,7 @@ useEffect(() => {
      <NavBar setStart={setStart} setLgShow={setLgShow} />
      {start == true ?
         <Landing setStart = {setStart} /> : 
-      <Play start={start} setStart={setStart} youWin={youWin} setYouWin={setYouWin} highScore={highScore} />
+      <Play start={start} setStart={setStart} youWin={youWin} setYouWin={setYouWin} highScore={highScore} highStats={highStats}/>
       
      }
      <Modal
