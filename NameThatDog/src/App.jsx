@@ -17,7 +17,7 @@ function App() {
 
   async function highScores(){
     try{
-        const API_URL = 'http://localhost:4004'
+        const API_URL = 'https://namethatdog.onrender.com' || 'http://localhost:4004'
         const {data}=await axios.get(`${API_URL}/users/highscore`)
         console.log(data)
         setHighScore(data.highScore[0].score)

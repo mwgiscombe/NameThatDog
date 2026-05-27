@@ -7,7 +7,7 @@ function GameOver({score, reset, youWin, setYouWin}) {
 
     async function saveScore(x){
         try{
-            const API_URL = 'http://localhost:4004'
+            const API_URL = 'https://namethatdog.onrender.com' || 'http://localhost:4004'
             const {data}=await axios.post(
                 `${API_URL}/users/save`,
             {username,
